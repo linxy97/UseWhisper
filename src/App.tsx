@@ -112,7 +112,7 @@ function App() {
           {/* A large paper placeholder */}
           <Paper
             sx={{
-              height: "60vh",
+              minHeight: "60vh",
             }}
           >
             {transcriptionProgress === "FREE" && transcribedText && (
@@ -121,7 +121,7 @@ function App() {
             {transcriptionProgress === "IN_PROGRESS" && <LinearProgress />}
           </Paper>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} padding={5}>
           <BottomBar />
         </Grid>
       </Grid>
